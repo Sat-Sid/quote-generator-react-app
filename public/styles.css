@@ -1,0 +1,75 @@
+/* #f0f8ff , #ccff00, #00ccff*/
+
+:root {
+
+    --bg-color: linear-gradient(135deg, #ccff00, #00ccff);
+    --bg-card: #f0f8ff;
+    --font-color: #f0f8ff; 
+}
+
+body {
+    background: var(--bg-color);
+    background-repeat: no-repeat;
+    color: var(--font-color);
+    height: 100vh;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.spinner-cust-height{
+    height: 100vh;
+}
+
+.spinner-cust-size {
+    width: 4rem;
+    height: 4rem;
+}
+
+.container-cust {
+    height: 98vh;
+    padding: 1.5rem;
+}
+
+.card-area {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.card-cust {
+    background-color: var(--bg-card);
+    border-radius: 1.5rem;
+    min-width: fit-content;
+    min-height: fit-content;
+    position: relative;
+    padding: 1.2rem;
+    max-width: 650px;
+}
+
+.card-cust::after {
+    content: "";
+    height: calc(1vw + 3rem);
+    width: calc(1vw + 3rem);
+    background-color: var(--bg-card);
+    position: absolute;
+    bottom: -25px;
+    left: 50px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.fs-sm-cust {
+    font-size: 0.8rem;
+}
+
+.footer {
+    max-height: fit-content;
+    font-size: 0.8rem;
+}
