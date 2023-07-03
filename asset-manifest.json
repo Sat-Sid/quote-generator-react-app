@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/quote-generator-react-app/static/js/main.e8fbda30.js",
+    "index.html": "/quote-generator-react-app/index.html",
+    "main.e8fbda30.js.map": "/quote-generator-react-app/static/js/main.e8fbda30.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e8fbda30.js"
+  ]
+}
